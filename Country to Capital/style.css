@@ -1,0 +1,31 @@
+.select{
+    border-radius: 35px;
+    display: block;
+    height: 10vh;
+    text-align: center;
+    cursor: pointer;
+    width: 30vw;
+    margin: auto;
+}
+
+
+
+.select:focus-visible{
+    width: 40vw;
+    height: 10vh;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.79);
+    color: white;
+    box-shadow: -1px 0px 20px 5px white;
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+
+
+
+h1{
+    text-align: center;
+}

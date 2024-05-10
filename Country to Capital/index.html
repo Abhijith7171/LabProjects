@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country TO Capitalizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <select class="select" id="">
+        <option class="option" value="none">Select your country</option>
+        <option class="option" value="India">India</option>
+        <option class="option" value="America">America</option>
+        <option class="option" value="Japan">Japan</option>
+        <option class="option" value="China">China</option>
+        <option class="option" value="Goa">Goa</option>
+    </select>
+    <h1>This Line Is Empty</h1>
+    <script>
+        
+            function capital(e){
+            c="Please Selext a Country"
+            if(e==="India"){
+                c="Delhi"
+            }
+            else if(e==="America"){
+                c="South America"
+            }
+            else if(e==="Japan"){
+                c="Tokyo"
+            }
+            else{
+                c="Dont Know"
+            }
+            return c
+        }
+        
+        
+        let options=document.querySelector(".select")
+        let result =document.querySelector("h1")
+        options.addEventListener("change",()=>{
+            result.innerHTML=`${capital(options.value)}`
+            result.style.color="red"
+            // result.focus()
+        })
+
+    </script>
+</body>
+</html>

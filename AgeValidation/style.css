@@ -1,0 +1,15 @@
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+}
+
+.result{
+    color: green;
+}
+.result1{
+    color: red;
+}
